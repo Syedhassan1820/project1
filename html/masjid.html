@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="F:\masjid\css\masjid.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<main>
+    <div class="header">
+        <nav>
+            <ul class="sidebar">
+                <li onclick="hideSidebar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px"
+                            viewBox="0 -960 960 960" width="24px" fill="#FFFFFF">
+                            <path
+                                d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" />
+                        </svg></a></li>
+                <li><a href="masjid.html">HOME</a></li>
+                <li><a href="support.html">SUPPORT</a></li>
+                <li><a href="register_your_masjid.html">REGISTER YOUR MASJID</a></li>
+                <li><a href="select_masjid.html">SELECT MASJID</a></li>
+                <li><a href="login">LOGIN</a></li>
+            </ul>
+            <ul>
+                <li><img id="logo" alt="my-masjid" src="F:/masjid/photos/logo.png"></li>
+                <li class="hideOnMobile"><a href="masjid.html">HOME</a></li>
+                <li class="hideOnMobile"><a href="support.html">SUPPORT</a></li>
+                <li class="hideOnMobile"><a href="register_your_masjid.html">REGISTER YOUR MASJID</a></li>
+                <li class="hideOnMobile"><a href="select_masjid.html">SELECT MASJID</a></li>
+                <li class="hideOnMobile"><a href="login.html">LOGIN</a></li>
+                <li class="menu-button" onclick="showSidebar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg"
+                            height="24px" viewBox="0 -960 960 960" width="24px" fill="#FFFFFF">
+                            <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" />
+                        </svg></a></li>
+            </ul>
+        </nav>
+        <script>
+            function showSidebar() {
+                const sidebar = document.querySelector('.sidebar')
+                sidebar.style.display = 'flex'
+            }
+            function hideSidebar() {
+                const sidebar = document.querySelector('.sidebar')
+                sidebar.style.display = 'none'
+            }
+        </script>
+    </div>
+    <div>
+        <div class="heading">
+            <h1>MY-MASJID</h1>
+            <p>Grow community of your Masjid by new technology!</p>
+            <div class="button-container">
+                <a href="select_masjid.html"><input type="submit" class="submit-button" value="SELECT MASJID"></a>
+                <a href="register_your_masjid.html"><input type="submit" class="submit-button"
+                        value="REGISTER YOUR MASJID"></a>
+            </div>
+        </div>
+    </div>
+    <div class="text-with-images">
+        <div class="title-text">
+            <h3>Salah times and messages to the community</h3>
+            <p>With My-Masjid your masjid is able to manage messages to the community and your masjid’s exact Adhan and
+                Iqamah timings. The timings and messages are available on both mobile phones and on large screens in the
+                masjid. My-masjid is free of cost. Register your masjid and get started today!</p>
+        </div>
+        <div class="image-1">
+            <img src="F:/masjid/photos/mobilephone.png" alt="image of the mobile phone view" loading="lazy" />
+        </div>
+    </div>
+    <div class="video-container">
+        <h2>My-Masjid Large Screen Display inside your Masjid!</h2>
+        <iframe width="auto" height="auto" src="https://www.youtube.com/embed/Ro4CiqSpFNs?si=b1u8_OAPrBV7ccNr"
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+    <div class="timing">
+        <h2>3-in-1</h2>
+        <p>My-Masjid gives you 3 modes to show <b> timings</b> and <b> messages</b> on each large screen in your masjid.
+        </p>
+        <div class="container">
+            <div class="item">
+                <img src="F:/masjid/photos/3in1-1.png" alt="timing" id="timing-image">
+                <h3>TIMING</h3>
+                <p>Timing screen shows a clock on left side and Adhan, Iqamah times on the right. This mode is suitable
+                    inside prayer halls.</p>
+            </div>
+            <div class="item">
+                <img src="F:/masjid/photos/3in1-2.png" alt="timing+info" id="timing-image+info">
+                <h3>TIMING+INFO</h3>
+                <p>Timing+Info screen show salah times on left and rotating messages on the right side of the screen.
+                </p>
+                <P>This screen automatically transforms into Timing screen 2 mins before salah and back again 5 mins
+                    after Iqamah.
+                    This mode is suitable both inside prayer halls and close to prayer halls.</p>
+            </div>
+            <div class="item">
+                <img src="F:/masjid/photos/3in1-3.png" alt="info" id="info">
+                <h3>INFO</h3>
+                <p>Info screen show rotating messages only and a brief next salah alert at the bottom. Info screens are
+                    most
+                    suitable in entrance/exit areas or cafe areas of the Masjid, or next to the timing screens within
+                    prayer
+                    halls.</p>
+            </div>
+        </div>
+    </div>
+    <h2>Few of the Major Android Features…</h2>
+    <div class="major_features">
+        <div class="iframe">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/Ui9b_gkzGkg?si=9OfiSNrIhafzCRIQ"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+        <div class="iframe1">
+            <ul type="disc">
+                <li>Show messages to anyone visiting your Masjid page</li>
+                <li>The same information on all type of devices</li>
+                <li>Automatic adjustment for daylight saving</li>
+                <li>Reminders/Alerts on mobile phones at Salah and Iqama times which are highly customizable.</li>
+                <li>Option to mark any Masjid as favorite and its management</li>
+                <li>The application also provides a home screen widget for quick viewing of Salah times without even
+                    opening
+                    the app.</li>
+                <li>Ability to share applications with other mobile phone users.</li>
+                <li>User can register his/her Masjid by using the register Masjid feature.</li>
+            </ul>
+        </div>
+    </div>
+    <div class="app">
+        <h2>My-Masjid App for Android TV</h2>
+        <p>We also provide Android TV compatability to run My-Masjid Application</p>
+    </div>
+    <div class="features1">
+        <div class="features1-1">
+            <img src="F:/masjid/photos/my-masjid_android_tv-2-1.png" alt="tv_interface" id="tv_interface">
+        </div>
+        <div class="features1-2">
+            <ul type="disc">
+                <li>Custom sound for adhan and iqamah times</li>
+                <li>Full screen Adhan media playback for better visualization</li>
+                <li>Option to launch My-Masjid application whenever devices restarts</li>
+                <li>Option to disable screen time out so that app keeps on running all the time</li>
+                <li>Switch between different display modes</li>
+                <li>Use My-Masjid application as screen saver</li>
+                <li>D-pad supported in-app navigation</li>
+                <li>To download My Masjid for your Smart TV Click Here.</li>
+            </ul>
+        </div>
+    </div>
+    <div class="features2">
+        <div class="features2-1">
+            <h3>Large Info Screens</h3>
+            <p>My-Masjid is the Large Screen Display solution for your Masjid to display and track the daily salah times
+                on
+                the Masjid premises and on mobile phones. Once loaded in the browser it can work offline without need of
+                an
+                internet connection!</p>
+        </div>
+        <div class="features2-2">
+            <img src="F:/masjid/photos/screenshot-of-flow-new.png" alt="tv_interface2" id="tv_interface2">
+        </div>
+    </div>
+    <div class="features3">
+        <div class="features3-1">
+            <img src="F:/masjid/photos/ipad-iphone-namo_updated.png" alt="mobile_interface" id="mobile_interface2">
+        </div>
+        <div class="features3-2">
+            <h3>Arrive on Time</h3>
+            <p>A difference of only 5 minutes can make or break your jamaah attendance. Some times they stand earlier
+                some
+                times later. Now your masjid community – and anyone in the world – can follow the exact time for Adhan
+                and
+                Iqamah from home or on the road from mobile devices. This motivates more people to join the masjid right
+                on
+                time.</p>
+            <p>You or the Muazzin don’t have to look at the screen. At each Adhan and Iqamah a buzz sound is played.
+                Nobody
+                will be in doubt that the time of Adhan or Iqamah has started.</p>
+            <p>Now you will be right on time for every salah in your masjid إن شاء الله!</p>
+        </div>
+    </div>
+    <div class="features4">
+        <div class="features4-1">
+            <h3>Sound Feedback</h3>
+            <p>The system plays three discreet sounds, so that you don’t even have to look at the screen to know the
+                event
+                related to Salah.</p>
+            <ul>
+                <li>1 beep at Adhan time</li>
+                <li>1 long buzz as final warning to turn off mobile phones</li>
+                <li>2 beeps at Iqamah time</li>
+            </ul>
+            <p>The final warning buzz to turn off mobile phones is played 45 sec prior to Iqamah and has two purposes.
+                To
+                remind turning off the mobile phone and to advice the people in sunnah prayers to finish their sunnah in
+                45
+                sec as the Jamaah will stand soon. We don’t play the Adhan or Iqamah as it is the duty of the Muazzin
+                and it
+                carries high reward to call the Adhan and Iqamah.</p>
+        </div>
+        <div class="features4-2">
+            <img src="F:/masjid/photos/loud-speaker-310849_1280-1.png" alt="loud-speaker">
+        </div>
+    </div>
+    <div class="features5">
+        <div class="features5-1">
+            <img src="F:/masjid/photos/Turn-off-mobile.png" alt="turn_off_display">
+        </div>
+        <div class="features5-2">
+            <h3>Less Distraction</h3>
+            <p>Do people constantly look at their mobile phones when waiting for Salah? Does the phones ring under
+                Salah? This is annoying and distracting for all the community how came for peace and prayers in the
+                Masjid.</p>
+            <p>The discreet sound feedbacks free you from looking at any device. You can concentrate and devote yourself
+                more to your prayers.</p>
+            <p>The My-Masjid solution reminds to turn off mobile phones as a sliding image:</p>
+            <ul type="none">
+                <li>3 times before Adhan</li>
+                <li>3 times before Iqamah</li>
+            </ul>
+            <p>It provides “a single point of truth” about the timings observed in the Masjid – without debates or
+                distraction.</p>
+        </div>
+    </div>
+    <div class="application">
+        <h3>Download My-Masjid Application</h3>
+        <p>Download My-Masjid application from the Google Play Store and App Store to start tracking your daily
+            Salah times.</p>
+        <img src="F:/masjid/photos/play store.png" alt="play store" class="download">
+        <img src="F:/masjid/photos/app store.png" alt="app store" class="download">
+    </div> 
+    <footer>
+        <p>&copy; Copyright My-Masjid 2023. All Rights Reserved</p>
+        <p><a href="#">Privacy Policy </a>&nbsp;&nbsp; <a href="#">Contact Us</a></p>
+        <div class="social-icons">
+            <a href="#" target="_blank">
+                <i class="fa-brands fa-facebook"></i>
+            </a>
+            <a href="#" target="_blank">
+                <i class="fa-brands fa-x-twitter"></i>
+            </a>
+            <a href="#" target="_blank">
+                <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a href="#" target="_blank">
+                <i class="fa-brands fa-linkedin-in"></i>
+            </a>
+            <a href="#" target="_blank">
+                <i class="fa-brands fa-youtube"></i>
+            </a>
+
+        </div>
+    </footer>
+</main>
+
+</html>
