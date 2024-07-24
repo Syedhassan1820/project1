@@ -99,7 +99,7 @@ nav li:first-child{
   }
 .heading {
   height: 100vh;
-  background-image: url('F://masjid/photos/masjid.jpeg'); /* Path to your image */
+  background-image: url('../photos/masjid.jpeg'); /* Path to your image */
   background-size: cover; /* Ensures the background image covers the entire element */
   background-position: center; /* Centers the background image */
   background-repeat: no-repeat; /* Prevents the background image from repeating */

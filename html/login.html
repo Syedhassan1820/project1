@@ -1,12 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Register Your Masjid</title>
-    <link rel="stylesheet" href="F:/masjid/css/login.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../css/login.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
+
 <body>
     <header>
         <div class="header">
@@ -24,7 +28,7 @@
                     <li><a href="login.html">LOGIN</a></li>
                 </ul>
                 <ul>
-                    <li><img id="logo" alt="my-masjid" src="F:/masjid/photos/logo.png"></li>
+                    <li><img id="logo" alt="my-masjid" src="../photos/logo.png"></li>
                     <li class="hideOnMobile"><a href="index.html">HOME</a></li>
                     <li class="hideOnMobile"><a href="support.html">SUPPORT</a></li>
                     <li class="hideOnMobile"><a href="register_your_masjid.html">REGISTER YOUR MASJID</a></li>
@@ -49,7 +53,23 @@
         </div>
     </header>
     <div class="control_panel">
-
+        <div class="form-container">
+            <form action="#">
+                <div class="heading">
+                    <h2>CONTROL PANEL</h2>
+                    <hr>
+                    <h5>Sign In</h5>
+                </div>
+                <label for="email">
+                    <legend>Email * </legend><input id="email" name="email" type="email" required />
+                </label>
+                <label for="password">
+                    <legend>Password * </legend><input id="password" name="password" type="password" required />
+                </label>
+                <p><a href="#">Forgot password?</a></p>
+                <a href="#"><input type="submit" value="Submit" id="submit"></a>
+            </form>
+        </div>
     </div>
     <footer>
         <p>&copy; Copyright My-Masjid 2023. All Rights Reserved</p>
@@ -70,9 +90,11 @@
             <a href="#" target="_blank">
                 <i class="fa-brands fa-youtube"></i>
             </a>
-    
+
+
         </div>
     </footer>
 
 </body>
+
 </html>
