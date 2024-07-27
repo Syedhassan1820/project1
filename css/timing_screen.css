@@ -1,0 +1,143 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, Arial, Helvetica, sans-serif, sans-serif;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.container{
+    padding: 0px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 10px;
+    }
+    @media(max-width: 700px) {
+      .clock {
+        grid-template-columns: 1fr;
+      }
+      .salah-time{
+        width: 100vw;
+      }
+    }
+    .clock-container{
+        display: flex;
+        flex-direction: column;
+    }
+.clock{
+    width: 500px;
+    height: 500px;
+    background-color: lightgray;
+    position: relative;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.clock::before{
+    content: "";
+    width: 500px;
+    height: 500px;
+    position: absolute;
+    border-radius: 50%;
+    /*background: linear-gradient(to right, #00d9ff, #ee00ff);*/
+    box-shadow: 0 0 10px 10px rgba(130, 142, 132, 0.2);
+    z-index: -1;
+}
+.number{
+   transform: rotate(calc(30deg * var(--n))); 
+   position: absolute;
+   text-align: center;
+   inset: 20px;
+   font-size: 40px;
+   /* color: #00d9ff;*/
+   text-shadow: 0 0 12px rgb(108, 99, 99);
+}
+.number b{
+    transform: rotate(calc(-30deg * var(--n))); 
+    display: inline-block;
+}
+.center-dot{
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    background-color: red;
+    border: 6px solid black;
+    border-radius: 50%;
+}
+.hour-hand, .minute-hand, .second-hand{
+    --rotate: 0;
+    position: absolute;
+    left: 50%;
+    bottom: 50%;
+    transform: translate(-50%) rotate(calc(var(--rotate)* 1deg));
+    transform-origin: bottom;
+    border-radius: 30px 30px 0 0;
+}
+.hour-hand{
+    width: 12px;
+    height: 130px;
+    background: linear-gradient(#00d9ff, #ee00ff);
+}
+.minute-hand{
+    width: 12px;
+    height: 190px;
+    background: linear-gradient(to top,#00d9ff, #ee00ff);
+}
+.second-hand{
+    width: 6px;
+    height: 210px;
+    background: linear-gradient(to top,#00d9ff, #ee00ff);
+}
+.mosque-info {
+    text-align: center;
+}
+.digital-clock {
+    text-align: center;
+}
+
+#time {
+    font-size: 3em;
+}
+
+#date {
+    font-size: 1.2em;
+}
+.salah-time{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.countdown {
+    margin: 20px;
+}
+
+#countdown-timer {
+    font-size: 3em;
+    color: #3a82f7;
+}
+
+table {
+    width: 80%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+    text-align: center;
+    padding: 8px;
+}
+
+th {
+    background-color: #f2f2f2;
+    font-size: 1.2em;
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}

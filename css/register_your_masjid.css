@@ -110,7 +110,6 @@ form .heading
 min-width: 300px;
 min-height: 90vh;
 margin: 10px auto;
-border: 1px solid #000;
 border-radius: 10px;
 box-shadow: 3px 3px 7px 3px rgba(0, 0, 0, 0.2);
 }
@@ -142,7 +141,6 @@ input[type="submit"]{
   min-width: 100px;
 height: fit-content;
 margin: 10px auto;
-border: 1px solid #000;
 border-radius: 10px;
 box-shadow: 3px 3px 7px 3px rgba(0, 0, 0, 0.2);
 padding: 15px;
